@@ -1,0 +1,31 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30;
+    font-weight: bold;
+    color: blue;
+    background-color: gold;
+}
+
+ul {
+    /*list-style-position: outside;*/
+    padding-left: 0;
+}
+
+li {
+    position: relative;
+    left: -6vw;
+}
+
+#sarang {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
