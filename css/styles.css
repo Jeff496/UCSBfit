@@ -7,15 +7,16 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    text-align: center;
+.header {
+    display: flex;
 }
 
-h1 {
-    font-size: 30;
-    font-weight: bold;
-    color: blue;
-    background-color: gold;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
