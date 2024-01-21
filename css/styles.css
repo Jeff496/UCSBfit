@@ -17,7 +17,7 @@ body {
     background-color: #eee;
     display: flex;
     height: 10vh;
-    padding: 10px 20px;
+    padding: 2% 4%;
     justify-content: space-between;
 }
 
@@ -27,8 +27,24 @@ body {
     align-items: center;
 }
 
-.right {
+.header .right {
     justify-content: flex-end;
+    min-width: 5vw;
+}
+
+li {
+    padding-right: 10%;
+}
+
+.dining {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dining .left {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 ul {
@@ -36,11 +52,6 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-}
-
-li {
-    padding: 10px;
 }
 
 a {
@@ -48,8 +59,6 @@ a {
 }
 
 button {
-    padding: 8px;
-    margin: 4px;
 }
 
 #sarang {
