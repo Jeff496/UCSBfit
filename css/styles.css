@@ -43,11 +43,18 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 4%;
 }
 
 .dining .left {
     flex-direction: column;
     align-items: flex-start;
+    flex-grow: 0.5;
+}
+
+.dining .right {
+    align-items:flex-start;
+    justify-content: center;
 }
 
 ul {
