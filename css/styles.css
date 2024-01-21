@@ -1,9 +1,6 @@
-* {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 html {
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 *, *:before, *:after {
@@ -19,6 +16,11 @@ h1 {
     font-weight: bold;
     color: blue;
     background-color: gold;
+}
+
+button {
+    padding: 8px;
+    margin: 4px;
 }
 
 #sarang {
