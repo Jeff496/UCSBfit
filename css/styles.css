@@ -31,14 +31,6 @@ body {
     justify-content: flex-end;
 }
 
-li {
-    padding-right: 10%;
-}
-
-.last {
-    padding: 0;
-}
-
 .dining {
     display: flex;
     justify-content: center;
@@ -55,6 +47,18 @@ li {
 .dining .right {
     align-items:flex-start;
     justify-content: center;
+}
+
+.footer {
+    display: flex;
+}
+
+li {
+    padding-right: 10%;
+}
+
+.last {
+    padding: 0;
 }
 
 ul {
