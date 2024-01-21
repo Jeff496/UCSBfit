@@ -38,6 +38,8 @@ body {
     flex-wrap: wrap;
     padding: 4%;
     flex: 1;
+    overflow-y:auto;
+    background-color: #fff;
 }
 
 .main .left {
@@ -57,6 +59,15 @@ body {
     background-color: #eee;
 }
 
+h1 {
+    color: #bf953f;
+}
+
+h3, 
+p {
+    color: #001f3f;
+}
+
 li {
     padding-right: 10%;
 }
@@ -74,9 +85,14 @@ ul {
 
 a {
     text-decoration: none;
+    color: #000080;
 }
 
 button {
+    border-radius: 10%;
+    color: #eee;
+    background-color: #6786a3;
+    border: 10% solid #405a77;
 }
 
 #sarang {
