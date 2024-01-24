@@ -47,6 +47,32 @@ body {
     align-items: flex-start;
     flex-grow: 0.5;
 }
+/* 
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: calc(100% + .5rem);
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown + 
+
+.dropdown > .link:focus + .dropdownMenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+} */
 
 .main .right {
     align-items:flex-start;
