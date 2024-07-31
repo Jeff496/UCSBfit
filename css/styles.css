@@ -1,24 +1,14 @@
-html {
+* {
     box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.header {
-    background-color: #eee;
-    display: flex;
-    height: 10vh;
-    padding: .5% 4%;
 }
 
 .left, 
@@ -28,9 +18,54 @@ body {
     flex: 1 1 0;
 }
 
+/* header styling */
+
+.header {
+    background-color: #eee;
+    display: flex;
+    height: 10vh;
+    padding: .5% 4%;
+}
+
+.header .left h1 {
+    color: #bf953f;
+}
+
+#sarang {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    margin: 1%;
+}
+
+/* nav bar in header styling */
+
 .header .right {
     justify-content: flex-end;
 }
+
+.header .right li {
+    padding-right: 10%;
+}
+
+.header .right .last {
+    padding: 0;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #000080;
+}
+
+/* main body styling */
 
 .main {
     display: flex;
@@ -47,72 +82,30 @@ body {
     align-items: flex-start;
     flex-grow: 0.5;
 }
-/* 
-.dropdown {
-    position: relative;
-}
-
-.dropdownMenu {
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: calc(100% + .5rem);
-    padding: .75rem;
-    border-radius: .25rem;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-
-.dropdown + 
-
-.dropdown > .link:focus + .dropdownMenu {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-} */
 
 .main .right {
     align-items:flex-start;
     justify-content: center;
 }
 
+.main .left h3, 
+.main .left p {
+    color: #001f3f;
+}
+
+legend {
+    display: flex;
+}
+
+/* footer styling */
+
 .footer {
+    height: clamp(10vh, 100px, 20vh);
     display: flex;
     justify-content: space-around;
     background-color: #eee;
 }
 
-h1 {
-    color: #bf953f;
-}
-
-h3, 
-p {
-    color: #001f3f;
-}
-
-li {
-    padding-right: 10%;
-}
-
-.last {
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-    color: #000080;
-}
 
 button {
     border-radius: 10%;
@@ -121,10 +114,6 @@ button {
     border: 10% solid #405a77;
 }
 
-#sarang {
-    max-width: 80%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-    margin: 1%;
-}
+/* media queries */
+
+/* small screens */
