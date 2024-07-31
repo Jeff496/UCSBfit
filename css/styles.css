@@ -23,23 +23,25 @@ body {
 .header {
     background-color: #eee;
     display: flex;
-    height: 10vh;
+    height: clamp(10vh, 250px, 20vh);
     padding: .5% 4%;
 }
 
+/* left side nav bar in header styling */
+
 .header .left h1 {
-    color: #bf953f;
+    background: linear-gradient(90deg, rgba(191,149,63,1) 0%, rgba(54, 101, 218, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#sarang {
-    max-width: 80%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-    margin: 1%;
+.fa-solid.fa-dumbbell{
+    margin: 0px 10px;
+    color:#000080;
 }
 
-/* nav bar in header styling */
+/* right side nav bar in header styling */
 
 .header .right {
     justify-content: flex-end;
@@ -62,7 +64,13 @@ body {
 
 .header ul li a {
     text-decoration: none;
-    color: #000080;
+    color: black;
+    font-weight: 500;
+    transition: font-weight 0.5s ease;
+}
+
+.header ul li a:hover {
+    font-weight: 900;
 }
 
 /* main body styling */
@@ -88,6 +96,11 @@ body {
     justify-content: center;
 }
 
+#sarang {
+    height: 400px;
+    width: 400px;
+}
+
 .main .left h3, 
 .main .left p {
     color: #001f3f;
@@ -102,10 +115,26 @@ legend {
 .footer {
     height: clamp(10vh, 100px, 20vh);
     display: flex;
-    justify-content: space-around;
     background-color: #eee;
 }
 
+.footer h5 {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+
+.footer h5 a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.footer h5:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 button {
     border-radius: 10%;
