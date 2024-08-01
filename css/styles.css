@@ -34,10 +34,11 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-wrap: nowrap;
 }
 
 .fa-solid.fa-dumbbell{
-    margin: 0px 10px;
+    margin: 0px 5%;
     color:#000080;
 }
 
@@ -67,6 +68,7 @@ body {
     color: black;
     font-weight: 500;
     transition: font-weight 0.5s ease;
+    font-size: 20px;
 }
 
 .header ul li a:hover {
@@ -124,12 +126,17 @@ legend {
     position: relative;
 }
 
+#line {
+    border-right: 2px solid rgba(0, 0, 0, 0.15);
+}
+
 .footer h5 a {
     text-decoration: none;
     color: black;
     position: absolute;
     top: 40%;
     left: 40%;
+    font-size: 20px;
 }
 
 .footer h5:hover {
